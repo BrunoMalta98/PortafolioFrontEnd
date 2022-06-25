@@ -8,5 +8,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    
+    box-shadow:  7px 7px 15px #592A08;
+    z-index: 99;
 }
