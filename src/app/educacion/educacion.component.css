@@ -2,12 +2,22 @@
 
 padding-left: 3%;
 margin-left: 5%;
+margin-top: 2%;
 width: 90%;
-height: 450px;
-background-color:black;
+height: 420px;
+background-color:rgba(0, 0, 0, 0);
 box-shadow: 0 0 20px rgb(255, 68, 68);
 /*box-shadow: 0 0 20px #4f9;*/
 z-index: 98;
 border-radius: 20px;
 
+}
+
+h1{
+    
+    padding-top: 2%;
+    font-size: 40px;
+    font-weight: bold;
+    width:20%;
+    
 }

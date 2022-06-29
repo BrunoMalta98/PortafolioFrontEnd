@@ -1,44 +1,3 @@
-.barraSuperior {
-    overflow: hidden;
-    background-color:rgba(177, 59, 59, 0.897);
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    height: 60px;
-    z-index: 100;
-    box-shadow: 7px 7px 15px #592A08;
-}
-
-
-.buttonNavegacion{
-
-    color: white;
-    background-color: black;
-    font-size:14px;
-    font-family: "Helvetica Neue","Helvetica,Arial";
-    width: 7%;
-    height: 60%;
-    margin-right: 30px;
-    margin-top: 12px;
-    margin-left: 20px;
-    border-color: rgb(255, 255, 255);
-
-}
-
-.buttonLogin{
-
-   color: rgb(255, 255, 255);
-   background-color:rgb(141, 16, 16);
-   font-size: 19px;
-   font-family: "Helvetica Neue","Helvetica,Arial";
-   width: 7%;
-   height: 60%;
-   float: right;
-   margin-right: 30px;
-   margin-top: 12px;
-   
-}
-
 .redes{
     
     float: right;
@@ -50,7 +9,7 @@
 
 .marca{
     float: left;
-    margin-left: 25px;
+    
     
     
 
