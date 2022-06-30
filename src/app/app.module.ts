@@ -12,6 +12,8 @@ import { HabilidadesComponent } from './habilidades/habilidades.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { FooterComponent } from './footer/footer.component';
 import { NieblaComponent } from './niebla/niebla.component';
+import { LoginComponent } from './login/login.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { NieblaComponent } from './niebla/niebla.component';
     HabilidadesComponent,
     ProyectosComponent,
     FooterComponent,
-    NieblaComponent
+    NieblaComponent,
+    LoginComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
