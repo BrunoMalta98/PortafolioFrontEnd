@@ -1,11 +1,32 @@
-.containerFooter{
+.redes{
 
-    height: 80px;
-    border: 1px solid ;
-    margin-top: 2%;
-    width: 100%;
-    margin-left: 0%;
 
+    
+    margin-left:3%;
+    
+    margin-top: 15%;
+    max-width: 15%;
+    max-height: 15%;
+    padding-left: 70%;
+    margin-top: 5%;
+
+    
+    
+}
+
+
+.containerRedes{
+
+    
+    margin-top: 3%;
+    margin-right: 3%;
+    width: 200px;
+    height: 100px;
+    float:right;
+    border:  1px solid blue;
+    
+    
+    
 }
 
 

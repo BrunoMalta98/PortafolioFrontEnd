@@ -9,6 +9,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    box-shadow: 0 0 20px rgb(255, 68, 68);
     z-index: 99;
+    box-shadow:  0 0 50px rgb(255, 45, 227);
+    box-shadow: 0 0 70px rgb(255, 45, 227);
+    box-shadow: 0 0 80px rgb(255, 45, 227);
+    
 }
