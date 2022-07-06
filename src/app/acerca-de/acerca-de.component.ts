@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PortafolioService } from '../servicios/portafolio.service';
 
 @Component({
   selector: 'app-acerca-de',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AcercaDeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private portafolio:PortafolioService) { }
 
   ngOnInit(): void {
+
+
+    this.portafolio.obtenerDatos();
+
+
   }
 
 }
+ 
