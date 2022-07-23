@@ -13,7 +13,7 @@ export class PortafolioService {
 
 
     return this.http.get('json');
-
+    
 
 
     
