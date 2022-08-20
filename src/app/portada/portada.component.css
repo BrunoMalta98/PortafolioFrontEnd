@@ -1,16 +1,16 @@
 .portada{
     width: 100%;
-    height: 700px;
+    max-height: 800px;
     margin: 0px;
-    border-radius: 20px;
     padding: 0px;
     margin-bottom: 0px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
-    z-index: 99;
+    z-index: 1;
     box-shadow:  0 0 50px rgb(255, 45, 227);
     box-shadow: 0 0 70px rgb(255, 45, 227);
     box-shadow: 0 0 80px rgb(255, 45, 227);
+    position: relative;
     
 }

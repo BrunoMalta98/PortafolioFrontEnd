@@ -14,7 +14,10 @@ import { FooterComponent } from './footer/footer.component';
 import { NieblaComponent } from './niebla/niebla.component';
 import { LoginComponent } from './login/login.component';
 import { ContactoComponent } from './contacto/contacto.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { PortfolioComponent } from './portfolio/portfolio.component'
+import { ReactiveFormsModule } from '@angular/forms';
+import { NgIf } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -29,12 +32,16 @@ import {HttpClientModule} from '@angular/common/http'
     FooterComponent,
     NieblaComponent,
     LoginComponent,
-    ContactoComponent
+    ContactoComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
