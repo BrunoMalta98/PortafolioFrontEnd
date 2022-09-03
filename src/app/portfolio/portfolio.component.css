@@ -1,4 +1,43 @@
+
+
 div{
 
     width: 100%;
+}
+
+h1{
+    display: inline-block;
+    position: relative;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    width: 80%;
+    text-align: center;
+    text-shadow:  0 0 50px rgb(255, 45, 227);
+    text-shadow: 0 0 70px rgb(255, 45, 227);
+    text-shadow: 0 0 80px rgb(255, 45, 227);
+}
+
+h1::after,h1::before{
+
+    content:'';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color:currentColor;
+    opacity: 40%;
+    box-shadow:  0 0 50px rgb(255, 45, 227);
+    box-shadow: 0 0 70px rgb(255, 45, 227);
+    box-shadow: 0 0 80px rgb(255, 45, 227);
+    top:0.6em;
+}
+
+h1::before{
+left: -12%;
+
+}
+
+h1::after{
+right: -12%;
+
 }

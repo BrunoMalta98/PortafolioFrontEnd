@@ -18,6 +18,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { PortfolioComponent } from './portfolio/portfolio.component'
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgIf } from '@angular/common';
+import { RegistroComponent } from './registro/registro.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { NgIf } from '@angular/common';
     NieblaComponent,
     LoginComponent,
     ContactoComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,

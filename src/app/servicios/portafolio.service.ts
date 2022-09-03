@@ -7,16 +7,22 @@ import { Observable } from 'rxjs';
 })
 export class PortafolioService {
 
+  url: string ="http://localhost:8080/api/usuario"
   constructor(private http:HttpClient) { }
 
   obtenerDatos():Observable<any> {
 
 
-    return this.http.get('json');
+    return this.http.get<any>(this.url+"usuario");
+    
     
 
 
     
 
   }
+
+  
+  
+
 }

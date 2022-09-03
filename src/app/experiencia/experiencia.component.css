@@ -1,27 +1,20 @@
+
 .containerEducacion{
     
    
     padding-left: 5%;
-    margin-top: 8%;
+    margin-top: 3%;
     width: 100%;
     height: 600px;
     z-index: 98;
     border-radius: 20px;
-    
+    text-align: center;
     }
     
-    h1{
-        margin:auto;
-        margin-bottom: 1%;
-        padding-top: 2%;
-        font-size: 40px;
-        font-weight: bold;
-        width:20%;
-        
-    }
     
+
     .btn-edicion{
-        float: left;
+        float: right;
         margin-right:2%;
         margin-top:2%;
         z-index: 99;

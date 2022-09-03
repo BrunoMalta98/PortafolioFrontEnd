@@ -1,31 +1,45 @@
-.redes{
+.nav-link{
 
-
-    
-    margin-left:3%;
-    
-    margin-top: 15%;
-    max-width: 15%;
-    max-height: 15%;
-    padding-left: 70%;
-    margin-top: 5%;
-
+    display: inline-block;
+    margin-left: 10%;
     
     
 }
 
 
-.containerRedes{
+.container-redes{
 
     
-    margin-top: 3%;
-    margin-right: 3%;
-    width: 200px;
-    height: 100px;
+    margin-top: 1%;
+    width: 400px;
+    height: 40px;
     float:right;
-    border:  1px solid blue;
     
+ 
+}
+
+.text-info2{
+
+    font-size: 20px;
+    text-shadow:  0 0 50px rgb(45, 160, 255);
+    text-shadow: 0 0 70px rgb(45, 160, 255);
+    text-shadow: 0 0 60px rgb(45, 160, 255);
+    text-shadow: 0 0 90px rgb(45, 160, 255);
+    text-shadow: 0 0 70px rgb(45, 160, 255);
+    text-shadow: 0 0 80px rgb(45, 160, 255);
     
+}
+
+.text-info{
+
+    font-size: 12px;
+    margin-top: 10%;
+    text-shadow:  0 0 50px rgb(45, 160, 255);
+    text-shadow: 0 0 70px rgb(45, 160, 255);
+    text-shadow: 0 0 60px rgb(45, 160, 255);
+    text-shadow: 0 0 90px rgb(45, 160, 255);
+    text-shadow: 0 0 70px rgb(45, 160, 255);
+    text-shadow: 0 0 80px rgb(45, 160, 255);
     
 }
 

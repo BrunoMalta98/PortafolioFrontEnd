@@ -2,10 +2,23 @@
 <section class="containerLogin">
 <form [formGroup]="form" class="Login" (ngSubmit)="onEnviar($event)" >
     <fieldset>
-      <legend>Iniciar Sesión</legend>
+      <legend>Registro</legend>
      
       
       <div class="form-group">
+
+        <label for="inputNombre" class="form-label mt-4">Nombre</label>
+        <input type="nombre" formControlName="nombre" 
+        [ngClass]="{'is-invalid' : Nombre?.errors && Nombre?.touched, 'is-valid' : !Nombre?.errors &&  Nombre?.touched}"
+        class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingrese su nombre">
+          
+        <div *ngIf="Nombre?.errors && Nombre?.touched">
+          <p *ngIf="Nombre?.hasError('required')" class="text-danger">
+            El nombre es requerido.
+          </p>
+          
+        </div>
+
         <label for="exampleInputEmail1" class="form-label mt-4">Email</label>
         <input type="email" formControlName="email" 
         [ngClass]="{'is-invalid' : Email?.errors && Email?.touched, 'is-valid' : !Email?.errors &&  Email?.touched}"
@@ -36,14 +49,12 @@
         </div>
       </div>
       
-      <button type="submit" class="btn btn-primary" style="margin-top:6%">Ingresar</button>
-      
+      <button type="submit" class="btn btn-primary" style="margin-top:6%">Registrarse</button>
+   
 </fieldset>
-
-      <a [routerLink]="['/registro']">Registro</a>
   </form>
 
   <div class="info">
-    <p style="font-size: 40px;">Bienvenido a Mi portfolio web desarrollado para Argentina Programa, para continuar por favor inicie sesión o <a [routerLink]="['/registro']">Registrese</a>.</p>
+    <p style="font-size: 50px;">Para continuar por favor rellene los datos del formulario.</p>
   </div>
 </section>

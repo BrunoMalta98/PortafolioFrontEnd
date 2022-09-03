@@ -1,21 +1,23 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators} from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AutenticacionService } from '../servicios/autenticacion.service';
-@Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
-})
-export class LoginComponent implements OnInit {
 
+@Component({
+  selector: 'app-registro',
+  templateUrl: './registro.component.html',
+  styleUrls: ['./registro.component.css']
+})
+export class RegistroComponent implements OnInit {
+
+  
   form:FormGroup;
   constructor(private formBuilder: FormBuilder, private autenticacionService:AutenticacionService, private ruta:Router) { 
 
     this.form=this.formBuilder.group(
       {
 
-        
+        nombre:['',Validators.required,Validators.required],
         email:['',[Validators.required,Validators.email]],
         password:['',[Validators.required,Validators.minLength(8)]],
         
@@ -26,6 +28,9 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  get Nombre(){
+    return this.form.get('nombre');
+  }
 
   get Email(){
     return this.form.get('email');
@@ -41,7 +46,9 @@ export class LoginComponent implements OnInit {
     this.autenticacionService.Login(this.form.value).subscribe(data =>{
 
       console.log("DATA" + JSON.stringify(data));
-      this.ruta.navigate(['/portfolio']);
+      this.ruta.navigate(['/login']);
     })
   }
+
 }
+
