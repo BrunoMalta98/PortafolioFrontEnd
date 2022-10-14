@@ -10,7 +10,7 @@ h1{
     position: relative;
     margin-top: 4%;
     margin-bottom: 3%;
-    margin-left: 10%;
+    margin-left: 7%;
     width: 80%;
     text-align: center;
     text-shadow:  0 0 50px rgb(255, 45, 227);
@@ -38,6 +38,6 @@ left: -12%;
 }
 
 h1::after{
-right: -12%;
-
+right: -16%;
+width: 54%;
 }
