@@ -1,0 +1,89 @@
+<div class="container" *ngIf="experienciaLab">
+  <div class="row">
+    <div>
+      <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+        <div class="form-group">
+          <label for="nombreE">Nombre de la Empresa</label>
+          <input
+            type="text"
+            name="nombreE"
+            id="nombreE"
+            class="form-control"
+            [(ngModel)]="experienciaLab.nombreE"
+            required
+            placeholder="Nombre de la Empresa"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="puesto">Puesto</label>
+          <input
+            type="text"
+            name="puesto"
+            id="puesto"
+            class="form-control"
+            [(ngModel)]="experienciaLab.puesto"
+            required
+            placeholder="Puesto"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="descripcion">Descripcion</label>
+          <input
+            type="text"
+            name="descripcion"
+            id="descripcion"
+            class="form-control"
+            [(ngModel)]="experienciaLab.descripcion"
+            required
+            placeholder="Descripcion"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="fechaInicio">Fecha Inicio</label>
+          <input
+            type="text"
+            name="fechaInicio"
+            id="fechaInicio"
+            class="form-control"
+            [(ngModel)]="experienciaLab.fechaInicio"
+            required
+            placeholder="Fecha Inicio"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="fechaFin">Fecha Fin</label>
+          <input
+            type="text"
+            name="fechaFin"
+            id="fechaFin"
+            class="form-control"
+            [(ngModel)]="experienciaLab.fechaFin"
+            required
+            placeholder="Fecha Fin"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="imgEmpresa">Logo</label>
+          <input
+            type="text"
+            name="imgEmpresa"
+            id="imgEmpresa"
+            class="form-control"
+            [(ngModel)]="experienciaLab.imgEmpresa"
+            required
+            placeholder="Logo"
+          />
+        </div>
+
+        <button type="submit" id="save" class="btn btn-primary">
+          Editar Experiencia
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

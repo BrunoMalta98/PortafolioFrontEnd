@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { persona } from '../model/persona.model';
 import { AcercadeService } from '../servicios/acercade.service';
+import { PersonaService } from '../servicios/persona.service';
 
 @Component({
   selector: 'app-acerca-de',
@@ -9,14 +11,14 @@ import { AcercadeService } from '../servicios/acercade.service';
 export class AcercaDeComponent implements OnInit {
 
   
- 
+ persona: persona = new persona("","","","","","");
 
-  constructor(private SobreMi:AcercadeService) { }
+  constructor(public personaService: PersonaService) { }
 
   ngOnInit(): void {
 
     
-    this.SobreMi.obtenerDatosSobreMi();
+    this.personaService.getPersona().subscribe(data => {this.persona = data});
     
 
   }

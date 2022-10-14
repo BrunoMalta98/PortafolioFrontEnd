@@ -1,4 +1,4 @@
-<div   class="containerAcerca">
+<div   class="containerAcerca" >
         
         <button class="btn-edicion" hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
           <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
@@ -10,28 +10,39 @@
         </svg></button>
         
 
-        <div class="card border-primary mb-3" style="width: 28%;height: 95%;float: left;margin-top: 2%;border-radius:20px;">
+        <div class="card border-primary mb-3" style="width: 28%;height: 95%;float: left;margin-top: 2%;border-radius:20px;display: flex;">
         
-        <img src="./assets/perfil.jpeg" alt="fotoperfil" class="card border-dark mb-0" style="margin-top: 5%; width: 150px; height:150 px; padding: 0px;border-radius: 50%;z-index: 99;align-self: center;">
+          <div class="avatar" >
+            <!-- Avatar image -->
+            <div class="card border-dark mb-0"  style="margin-top: 5%;border: 3px solid rgb(255, 161, 232);width: 9.3125em; height:9.3125em; padding: 0px;border-radius: 50%;z-index: 99;align-self: center;height: 100%;width: 100%;flex:1;">
+            <img  class="avatar__image"  src= {{persona.img}} />
+          </div>
+        </div>
+
+        <!-- <img src="./assets/perfil.jpeg" alt="fotoperfil" class="card border-dark mb-0"> -->
         <button class="editar-perfil" hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
           <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
           <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
         </svg></button>
-        <div class="card-header" style="margin-top: 2%; align-self: center;height:14%"><p class="text-secondary" style="font-size: 28px">Bruno Maltagliati</p></div>
-        <div class="card-header" style="margin-top: 2%; align-self: center;height:11%"><p class="text-info" style="font-size: 18px">Desarrollador Web Full Stack Jr.</p></div>
-        <div class="card-header" style="margin-top: 2%; align-self: center;height:11%"><p class="text-info" style="font-size: 18px;">UTN, Argentina Programa, Google</p></div>
+        <div class="card-header" style="margin-top: 2%; align-self: center;height:14%;flex:1;"><p class="text-secondary" style="font-size: 28px">{{persona.nombre}} {{persona.apellido}}</p></div>
+        <div class="card-header" style="margin-top: 2%; align-self: center;height:11%;flex:1;"><p class="text-info" style="font-size: 18px">{{persona.titulo}}</p></div>
+        <div class="card-header" style="margin-top: 2%; align-self: center;height:11%;flex:1;"><p class="text-info" style="font-size: 18px;">{{persona.universidades}}</p></div>
       </div>
        
-        <div  class="card border-primary mb-3" style="width: 70%;float: right;margin-top: 5%;border-radius:20px;">
+        
+        <div  class="card border-primary mb-3" style="width: 70%;float: right;margin-top: 5%;border-radius:20px;display: flex;">
+         
+          
+
           <!-- <div class="card-header" style="height: 60px;"><h3 style="margin-top:12px;">Sobre mi</h3></div> -->
-        <div class="card-body" >
-          <p class="card-text-primary" style="font-size:25px;">Hola me llamo Bruno y soy un Desarrollador Web Full Stack Jr, con basta 
-            experiencia en el desarrollo de aplicaciones
-            web responsive.<br> Perfil proactivo con 
-            facilidad de aprendizaje, buenas 
-            habilidades comunicacionales,
-            focalizado y orientado a <br>los resultados.</p>
-        </div>
+        <div class="card-body" style="flex: 1;" >
+         
+          <p class="card-text-primary" style="font-size:1.5625em;">{{persona.descripcion}}</p>
+          </div>
+        
+          
+
+
         
 </div>
        

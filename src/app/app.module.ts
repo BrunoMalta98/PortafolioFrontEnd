@@ -16,10 +16,13 @@ import { LoginComponent } from './login/login.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import {HttpClientModule} from '@angular/common/http';
 import { PortfolioComponent } from './portfolio/portfolio.component'
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgIf } from '@angular/common';
 import { RegistroComponent } from './registro/registro.component';
-
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { interceptorProvider } from './servicios/interceptor-service';
+import { NuevaExperienciaComponent } from './experiencia/nueva-experiencia.component';
+import { EditarExperieciaComponent } from './experiencia/editar-experiecia.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,17 +38,26 @@ import { RegistroComponent } from './registro/registro.component';
     LoginComponent,
     ContactoComponent,
     PortfolioComponent,
-    RegistroComponent
+    RegistroComponent,
+    NuevaExperienciaComponent,
+    EditarExperieciaComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
+    FormsModule
+   
     
     
   ],
-  providers: [],
+  providers: [
+
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

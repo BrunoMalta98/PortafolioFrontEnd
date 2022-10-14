@@ -16,3 +16,17 @@
 
 }
 
+
+.container{
+
+    display: flex;
+    display: inline-flex;
+    
+
+}
+
+.nav-link{
+    margin-right:0.7em;
+
+}
+

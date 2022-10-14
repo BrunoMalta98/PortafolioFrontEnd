@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class AcercadeService {
 
-  url: string ="http://localhost:8080/api/acercaDe"
+  url: string ="http://localhost:8080/personas/traer"
   constructor(private http:HttpClient) { }
 
 

@@ -1,49 +1,56 @@
 <app-header></app-header>
 <section class="containerLogin">
-<form [formGroup]="form" class="Login" (ngSubmit)="onEnviar($event)" >
-    <fieldset>
-      <legend>Iniciar Sesión</legend>
-     
-      
-      <div class="form-group">
-        <label for="exampleInputEmail1" class="form-label mt-4">Email</label>
-        <input type="email" formControlName="email" 
-        [ngClass]="{'is-invalid' : Email?.errors && Email?.touched, 'is-valid' : !Email?.errors &&  Email?.touched}"
-        class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingrese su email">
-          
-        <div *ngIf="Email?.errors && Email?.touched">
-          <p *ngIf="Email?.hasError('required')" class="text-danger">
-            El email es requerido.
-          </p>
-          <p *ngIf="Email?.hasError('email')" class="text-danger">
-            El formato del email debe ser valido.
-          </p>
-        </div>
-        <small id="emailHelp" class="form-text text-muted">Nosotros nunca compartiremos su email.</small>
-      </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1" class="form-label mt-4">Contraseña</label>
-        <input type="password" formControlName="password"
-        [ngClass]="{'is-invalid' : Password?.errors && Password?.touched, 'is-valid' : !Password?.errors &&  Password?.touched}"
-        class="form-control" id="password" placeholder="Ingrese su contraseña">
-        <div *ngIf="Password?.errors && Password?.touched">
-          <p *ngIf="Password?.hasError('required')" class="text-danger">
-            La contraseña es requerida.
-          </p>
-          <p *ngIf="Password?.errors?.['minlength']" class="text-danger">
-            La contraseña debe contener 8 o mas caracteres.
-          </p>
-        </div>
-      </div>
-      
-      <button type="submit" class="btn btn-primary" style="margin-top:6%">Ingresar</button>
-      
-</fieldset>
+  <div class="Login">
+    <div
+      class="card border-secondary mb-3"
+      style="padding: 6%; border-radius: 20px"
+    >
+      <h1>Iniciar Sesión</h1>
 
+      <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+        <div>
+          <label for="nombreUsuario" class="form-label mt-3">Usuario</label>
+          <input
+            type="user"
+            id="nombreUsuario"
+            class="form-control form-control-lg"
+            placeholder="Ingrese su nombre de usuario"
+            [(ngModel)]="nombreUsuario"
+            name="nombreUsuario"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="password" class="form-label mt-3">Contraseña</label>
+          <input
+            type="password"
+            id="password"
+            class="form-control form-control-lg"
+            placeholder="Ingrese su contraseña"
+            [(ngModel)]="password"
+            name="password"
+            required
+          />
+        </div>
+
+        <button
+          type="submit"
+          class="btn btn-primary"
+          style="margin-top: 4%; margin-bottom: 3%"
+        >
+          Ingresar
+        </button>
+      </form>
       <a [routerLink]="['/registro']">Registro</a>
-  </form>
+    </div>
+  </div>
 
   <div class="info">
-    <p style="font-size: 40px;">Bienvenido a Mi portfolio web desarrollado para Argentina Programa, para continuar por favor inicie sesión o <a [routerLink]="['/registro']">Registrese</a>.</p>
+    <p style="font-size: 40px">
+      Bienvenido a Mi portfolio web desarrollado para Argentina Programa, para
+      continuar por favor inicie sesión o
+      <a [routerLink]="['/registro']">Registrese</a>.
+    </p>
   </div>
 </section>
