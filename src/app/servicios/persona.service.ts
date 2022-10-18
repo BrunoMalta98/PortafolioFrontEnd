@@ -13,7 +13,7 @@ import { persona } from '../model/persona.model';
 export class PersonaService {
 
 
-  URL: string = 'http://localhost:8080/persona/' ;
+  URL: string = 'https://backendportfoliobruno.herokuapp.com/persona/' ;
 
   constructor(private httpClient: HttpClient) { }
 
