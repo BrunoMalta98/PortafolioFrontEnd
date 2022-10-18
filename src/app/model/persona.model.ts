@@ -1,4 +1,4 @@
-export class persona{
+export class persona {
 
     id?: number;
     nombre: string;
@@ -8,7 +8,7 @@ export class persona{
     descripcion: string;
     img: string;
 
-    constructor(nombre: string,apellido: string,titulo: string,img: string, universidades: string,descripcion: string) {
+    constructor(nombre: string,apellido: string,titulo: string, universidades: string,descripcion: string,img: string) {
 
         this.nombre = nombre;
         this.apellido = apellido;

@@ -10,12 +10,12 @@ import { ExperienciaServService } from '../servicios/experiencia-serv.service';
 })
 export class NuevaExperienciaComponent implements OnInit {
 
+
   nombreE : string = '';
   puesto: string = '';
   descripcion: string = '';
   fechaInicio: string = '';
   fechaFin: string = '';
- 
   imgEmpresa: string = '';
 
 

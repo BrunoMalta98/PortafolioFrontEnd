@@ -23,6 +23,13 @@ import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { interceptorProvider } from './servicios/interceptor-service';
 import { NuevaExperienciaComponent } from './experiencia/nueva-experiencia.component';
 import { EditarExperieciaComponent } from './experiencia/editar-experiecia.component';
+import { NuevaEduComponent } from './educacion/nueva-edu.component';
+import { EditEducacionComponent } from './educacion/edit-educacion.component';
+import { EditAcercaDeComponent } from './acerca-de/edit-acerca-de.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +48,10 @@ import { EditarExperieciaComponent } from './experiencia/editar-experiecia.compo
     RegistroComponent,
     NuevaExperienciaComponent,
     EditarExperieciaComponent,
+    NuevaEduComponent,
+    EditEducacionComponent,
+    EditAcercaDeComponent,
+    
     
   ],
   imports: [
@@ -49,7 +60,9 @@ import { EditarExperieciaComponent } from './experiencia/editar-experiecia.compo
     HttpClientModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage()),
    
     
     

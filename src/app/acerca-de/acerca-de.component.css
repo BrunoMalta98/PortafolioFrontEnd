@@ -6,20 +6,21 @@
     height: 28,125em;
     z-index: 98;
     border-radius: 1.25em;
-
+    
+    
 }
 
 .avatar {
-    /* Rounded border */
+   
     border-radius: 50%;
-    height: 9.375em;
-    width: 9.375em;
     
+    max-width: 9.375rem;
+    max-height: 9.375rem;
     margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 1rem;
     
-    padding: 0px;
     
-    z-index: 99;
     align-self: center;
 }
 
@@ -32,12 +33,9 @@
     width: 100%;
 }
 
-h1{
+h1,h2,h3{
     margin:auto;
-    padding-top: 2%;
-    font-size: 40px;
-    font-weight: bold;
-    width:20%;
+    padding: 2px;
     
 }
 
@@ -47,7 +45,7 @@ h1{
     margin-top:2%;
     z-index: 99;
     position: relative;
-    background-color:rgba(184, 52, 52, 0.774);
+    
     
 
 }
@@ -59,7 +57,7 @@ h1{
     float: right;
     z-index: 99;
     position: absolute;
-    background-color:rgba(184, 52, 52, 0.774);
+   
 }
 
 .editar-btn-x{
@@ -69,7 +67,7 @@ h1{
     margin-top:2%;
     z-index: 99;
     position: relative;
-    background-color:rgba(184, 52, 52, 0.774);
+    
 
 }
 

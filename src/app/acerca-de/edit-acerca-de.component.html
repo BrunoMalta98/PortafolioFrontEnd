@@ -1,0 +1,102 @@
+<app-header></app-header>
+<section class="containerLogin">
+  <div class="container" *ngIf="Persona">
+    <div class="row">
+      <div
+        class="card border-secondary mb-3"
+        style="padding: 4%; border-radius: 20px"
+      >
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              class="form-control"
+              [(ngModel)]="Persona.nombre"
+              required
+              placeholder="Nombre"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input
+              type="text"
+              name="apellido"
+              id="apellido"
+              class="form-control"
+              [(ngModel)]="Persona.apellido"
+              required
+              placeholder="Apellido"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="titulo">Titulo</label>
+            <input
+              type="text"
+              name="titulo"
+              id="titulo"
+              class="form-control"
+              [(ngModel)]="Persona.titulo"
+              required
+              placeholder="Titulo"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="universidades">Universidades</label>
+            <input
+              type="text"
+              name="universidades"
+              id="universidades"
+              class="form-control"
+              [(ngModel)]="Persona.universidades"
+              required
+              placeholder="Universidades"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="descripcion">Descripcion</label>
+            <input
+              type="text"
+              name="descripcion"
+              id="descripcion"
+              class="form-control"
+              [(ngModel)]="Persona.descripcion"
+              required
+              placeholder="Descripcion"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="img">Logo</label>
+            <input
+              type="file"
+              name="img"
+              id="img"
+              class="form-control"
+              [(ngModel)]="Persona.img"
+              required
+              (change)="uploadImage($event)"
+              accept=".jpg, .jpeg, .png"
+              placeholder="Logo"
+            />
+          </div>
+
+          <button
+            type="submit"
+            id="save"
+            class="btn btn-primary"
+            style="margin-top: 2%"
+          >
+            Editar Persona
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

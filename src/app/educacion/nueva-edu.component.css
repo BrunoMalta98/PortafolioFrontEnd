@@ -1,0 +1,17 @@
+.containerLogin{
+
+    padding-left: 5%;
+    padding-top: 7%;
+    width: 100%;
+    
+    z-index: 98;
+    border-radius: 20px;
+ }
+ 
+ .container{
+
+    max-width: 50%;
+    max-height: 100%;
+    
+    
+ }

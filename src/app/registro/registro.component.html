@@ -1,29 +1,44 @@
 <app-header></app-header>
 <section class="containerLogin">
-<form [formGroup]="form" class="Login" (ngSubmit)="onEnviar($event)" >
+  <form [formGroup]="form" class="Login" (ngSubmit)="onEnviar($event)">
     <fieldset>
       <legend>Registro</legend>
-     
-      
-      <div class="form-group">
 
+      <div class="form-group">
         <label for="inputNombre" class="form-label mt-4">Nombre</label>
-        <input type="nombre" formControlName="nombre" 
-        [ngClass]="{'is-invalid' : Nombre?.errors && Nombre?.touched, 'is-valid' : !Nombre?.errors &&  Nombre?.touched}"
-        class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingrese su nombre">
-          
+        <input
+          type="nombre"
+          formControlName="nombre"
+          [ngClass]="{
+            'is-invalid': Nombre?.errors && Nombre?.touched,
+            'is-valid': !Nombre?.errors && Nombre?.touched
+          }"
+          class="form-control"
+          id="email"
+          aria-describedby="emailHelp"
+          placeholder="Ingrese su nombre"
+        />
+
         <div *ngIf="Nombre?.errors && Nombre?.touched">
           <p *ngIf="Nombre?.hasError('required')" class="text-danger">
             El nombre es requerido.
           </p>
-          
         </div>
 
         <label for="exampleInputEmail1" class="form-label mt-4">Email</label>
-        <input type="email" formControlName="email" 
-        [ngClass]="{'is-invalid' : Email?.errors && Email?.touched, 'is-valid' : !Email?.errors &&  Email?.touched}"
-        class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingrese su email">
-          
+        <input
+          type="email"
+          formControlName="email"
+          [ngClass]="{
+            'is-invalid': Email?.errors && Email?.touched,
+            'is-valid': !Email?.errors && Email?.touched
+          }"
+          class="form-control"
+          id="email"
+          aria-describedby="emailHelp"
+          placeholder="Ingrese su email"
+        />
+
         <div *ngIf="Email?.errors && Email?.touched">
           <p *ngIf="Email?.hasError('required')" class="text-danger">
             El email es requerido.
@@ -32,13 +47,25 @@
             El formato del email debe ser valido.
           </p>
         </div>
-        <small id="emailHelp" class="form-text text-muted">Nosotros nunca compartiremos su email.</small>
+        <small id="emailHelp" class="form-text text-muted"
+          >Nosotros nunca compartiremos su email.</small
+        >
       </div>
       <div class="form-group">
-        <label for="exampleInputPassword1" class="form-label mt-4">Contraseña</label>
-        <input type="password" formControlName="password"
-        [ngClass]="{'is-invalid' : Password?.errors && Password?.touched, 'is-valid' : !Password?.errors &&  Password?.touched}"
-        class="form-control" id="password" placeholder="Ingrese su contraseña">
+        <label for="exampleInputPassword1" class="form-label mt-4"
+          >Contraseña</label
+        >
+        <input
+          type="password"
+          formControlName="password"
+          [ngClass]="{
+            'is-invalid': Password?.errors && Password?.touched,
+            'is-valid': !Password?.errors && Password?.touched
+          }"
+          class="form-control"
+          id="password"
+          placeholder="Ingrese su contraseña"
+        />
         <div *ngIf="Password?.errors && Password?.touched">
           <p *ngIf="Password?.hasError('required')" class="text-danger">
             La contraseña es requerida.
@@ -48,13 +75,16 @@
           </p>
         </div>
       </div>
-      
-      <button type="submit" class="btn btn-primary" style="margin-top:6%">Registrarse</button>
-   
-</fieldset>
+
+      <button type="submit" class="btn btn-primary" style="margin-top: 6%">
+        Registrarse
+      </button>
+    </fieldset>
   </form>
 
   <div class="info">
-    <p style="font-size: 50px;">Para continuar por favor rellene los datos del formulario.</p>
+    <p style="font-size: 50px">
+      Para continuar por favor rellene los datos del formulario.
+    </p>
   </div>
 </section>
