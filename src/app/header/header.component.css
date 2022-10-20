@@ -30,3 +30,12 @@
 
 }
 
+
+
+
+
+@media screen and (max-width: 501px) {
+    .container {
+      flex-direction: column;
+    }
+  }

@@ -1,0 +1,48 @@
+<app-header></app-header>
+<section class="containerLogin">
+  <div class="container">
+    <div class="row">
+      <div
+        class="card border-secondary mb-3"
+        style="padding: 4%; border-radius: 20px"
+      >
+        <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+          <div class="form-group">
+            <label for="nombreS">Skill</label>
+            <input
+              type="text"
+              name="nombreS"
+              id="nombreS"
+              class="form-control"
+              [(ngModel)]="nombreS"
+              required
+              placeholder="Skill"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="porcentaje">Porcentaje</label>
+            <input
+              type="text"
+              name="porcentaje"
+              id="porcentaje"
+              class="form-control"
+              [(ngModel)]="porcentaje"
+              required
+              placeholder="Puesto"
+            />
+          </div>
+
+          <button
+            type="submit"
+            id="save"
+            class="btn btn-primary"
+            style="margin-top: 2%"
+          >
+            Cargar Skills
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

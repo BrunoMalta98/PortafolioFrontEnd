@@ -72,5 +72,38 @@ h1,h2,h3{
 }
 
 
+@media(max-width: 576){
+    
+    .card{
+
+        width: 400px;
+      height: 95%;
+      margin-right: 2%;
+      
+      margin-top: 1%;
+      border-radius: 20px;
+   
+        
+        
+}   
+ }
+    
+    
+    @media(max-width: 575){
+      
+        .card{
+
+        width: 400px;
+          height: 100%;
+          margin-right: 2%;
+       
+          margin-top: 1%;
+          border-radius: 20px;
+         
+            
+            
+    }     
+        }
+
 
 

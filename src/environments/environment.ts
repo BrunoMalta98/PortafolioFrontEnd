@@ -13,7 +13,11 @@ export const environment = {
     messagingSenderId: '902351686757',
     measurementId: 'G-WL8XTGPP8K',
   },
-  production: false
+  production: true,
+
+  //URL: 'http://localhost:8080/',
+  URL:'https://brunosportfolio.herokuapp.com/experiencia/'
+
 };
 
 /*

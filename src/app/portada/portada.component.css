@@ -21,3 +21,71 @@ div{
     align-items:center;
 }
 
+
+@media(max-width: 575px){
+.deslizaArrow {
+    z-index: 2;
+    position: absolute;
+    align-self: center;
+    bottom: 0;
+    top: 30%;
+    opacity: 0.7;
+    flex: 1;
+    margin-left: 46.2%;
+   
+}
+
+.portada{
+
+    height: 400px;
+    width: 400px;
+}
+
+
+}
+
+
+@media(max-width: 576){
+    .deslizaArrow {
+        z-index: 2;
+        position: absolute;
+        align-self: center;
+        bottom: 0;
+        top: 30%;
+        opacity: 0.7;
+        flex: 1;
+        margin-left: 46.2%;
+        
+    }
+
+    .portada{
+
+        height: 400px;
+        
+    }
+    }
+
+    @media(max-width: 576){
+        .desliza {
+            z-index: 2;
+            position: absolute;
+            bottom: 0;
+            top: 65%;
+            opacity: 0.7;
+            flex: 1;
+            left: auto;
+        }
+        }
+        
+        
+        @media(max-width: 575){
+            .desliza {
+                z-index: 2;
+                position: absolute;
+               
+                bottom: 0;
+                top: 65%;
+                opacity: 0.7;
+                left:auto;
+            }
+            }

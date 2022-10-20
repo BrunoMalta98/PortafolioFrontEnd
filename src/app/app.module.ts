@@ -29,6 +29,11 @@ import { EditAcercaDeComponent } from './acerca-de/edit-acerca-de.component';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { EditSkillComponent } from './habilidades/edit-skill.component';
+import { NuevoSkillComponent } from './habilidades/nuevo-skill.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { EditProyectoComponent } from './proyectos/edit-proyecto.component';
+import { NuevoProyectoComponent } from './proyectos/nuevo-proyecto.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +56,10 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     NuevaEduComponent,
     EditEducacionComponent,
     EditAcercaDeComponent,
+    EditSkillComponent,
+    NuevoSkillComponent,
+    EditProyectoComponent,
+    NuevoProyectoComponent,
     
     
   ],
@@ -61,9 +70,11 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     FormsModule,
+    NgCircleProgressModule.forRoot({}),
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideStorage(() => getStorage()),
-   
+    
+    
     
     
   ],
