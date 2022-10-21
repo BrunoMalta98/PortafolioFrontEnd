@@ -11,14 +11,14 @@ import { EducacionComponent } from './educacion/educacion.component';
 import { HabilidadesComponent } from './habilidades/habilidades.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { FooterComponent } from './footer/footer.component';
-import { NieblaComponent } from './niebla/niebla.component';
+
 import { LoginComponent } from './login/login.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import {HttpClientModule} from '@angular/common/http';
 import { PortfolioComponent } from './portfolio/portfolio.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgIf } from '@angular/common';
-import { RegistroComponent } from './registro/registro.component';
+
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { interceptorProvider } from './servicios/interceptor-service';
 import { NuevaExperienciaComponent } from './experiencia/nueva-experiencia.component';
@@ -46,11 +46,11 @@ import { NuevoProyectoComponent } from './proyectos/nuevo-proyecto.component';
     HabilidadesComponent,
     ProyectosComponent,
     FooterComponent,
-    NieblaComponent,
+    
     LoginComponent,
     ContactoComponent,
     PortfolioComponent,
-    RegistroComponent,
+ 
     NuevaExperienciaComponent,
     EditarExperieciaComponent,
     NuevaEduComponent,

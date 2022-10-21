@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { environment } from 'src/environments/environment';
+import { environment } from 'src/environments/environment.prod';
 import { Experiencia } from '../model/experiencia';
 
 @Injectable({
@@ -9,7 +9,7 @@ import { Experiencia } from '../model/experiencia';
 })
 export class ExperienciaServService {
 
-  xpURL = environment.URL + 'experiencia/';
+  xpURL = 'https://brunosportfolio.herokuapp.com/experiencia/';
 
   constructor(private httpClient: HttpClient) {}
 

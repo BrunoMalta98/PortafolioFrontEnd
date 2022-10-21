@@ -11,7 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { EditProyectoComponent } from './proyectos/edit-proyecto.component';
 import { NuevoProyectoComponent } from './proyectos/nuevo-proyecto.component';
-import { RegistroComponent } from './registro/registro.component';
+
 
 
 const routes: Routes = [
@@ -19,7 +19,6 @@ const routes: Routes = [
 {path:'portfolio',component:PortfolioComponent},
 {path:'login',component:LoginComponent},
 {path:'',redirectTo:'portfolio',pathMatch:'full'},
-{path:'registro',component:RegistroComponent},
 {path:'nuevaExperiencia',component: NuevaExperienciaComponent},
 {path:'editExperiencia/:id',component: EditarExperieciaComponent},
 {path:'nuevaEducacion',component:NuevaEduComponent},
