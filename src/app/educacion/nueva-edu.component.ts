@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Educacion } from '../model/educacion';
 import { EducacionServService } from '../servicios/educacion-serv.service';
+import { ImageService } from '../servicios/image.service';
 
 @Component({
   selector: 'app-nueva-edu',
@@ -10,6 +11,8 @@ import { EducacionServService } from '../servicios/educacion-serv.service';
 })
 export class NuevaEduComponent implements OnInit {
 
+  
+
   titulacion : string = '';
   institucion: string = '';
   descripcion: string = '';
@@ -17,7 +20,7 @@ export class NuevaEduComponent implements OnInit {
   fechaFin: string = '';
   imgInsti: string = '';
 
-  constructor(private educacionServ: EducacionServService, private router: Router ) { }
+  constructor(private imageService: ImageService,private activatedRouter: ActivatedRoute,private educacionServ: EducacionServService, private router: Router ) { }
 
   ngOnInit(): void {
 
@@ -25,7 +28,8 @@ export class NuevaEduComponent implements OnInit {
   }
   
   onCreate(): void{
-    const edu = new Educacion( this.titulacion, this.institucion, this.descripcion, this.fechaInicio, this.fechaFin, this.imgInsti);
+    const edu = new Educacion( this.titulacion, this.institucion, this.descripcion, this.fechaInicio, this.fechaFin, this.imgInsti );
+    
     this.educacionServ.save(edu).subscribe(
       data => {
       alert("Educacion creada con exito");
@@ -37,4 +41,8 @@ export class NuevaEduComponent implements OnInit {
       this.router.navigate(['']);
     })
   }
+  
+
+ 
 }
+ 

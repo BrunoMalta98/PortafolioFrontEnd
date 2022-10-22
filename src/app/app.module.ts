@@ -13,7 +13,7 @@ import { ProyectosComponent } from './proyectos/proyectos.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { LoginComponent } from './login/login.component';
-import { ContactoComponent } from './contacto/contacto.component';
+
 import {HttpClientModule} from '@angular/common/http';
 import { PortfolioComponent } from './portfolio/portfolio.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -48,7 +48,7 @@ import { NuevoProyectoComponent } from './proyectos/nuevo-proyecto.component';
     FooterComponent,
     
     LoginComponent,
-    ContactoComponent,
+   
     PortfolioComponent,
  
     NuevaExperienciaComponent,

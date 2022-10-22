@@ -1,69 +1,63 @@
-<div class="flexs">
-  <nav
-    class="navbar navbar-expand-lg navbar-dark bg-primary"
-    style="
-      z-index: 100;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      height: 3.75rem;
-      overflow: hidden;
-      opacity: 0.9;
-    "
-  >
-    <div class="container-fluid">
-      <a href=""
-        ><img
-          class="marca"
-          src="./assets/Logo.png"
-          style="
-            width: 7.8125rem;
-            height: 4.0625rem;
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-            background-position: top;
-            z-index: 100;
-          "
-      /></a>
+<nav
+  class="navbar navbar-expand-lg navbar-dark bg-primary"
+  style="
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100%;
 
-      <div class="collapse navbar-collapse" id="navbarColor01">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="portfolio">Home </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio/#acercaDe" style="color: white"
-              >Acerca De</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio/#educacion" style="color: white"
-              >Educacion</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="portfolio/#experiencia"
-              style="color: white"
-              >Experiencia</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="portfolio/#habilidades"
-              style="color: white"
-              >Habilidades</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio/#proyectos" style="color: white"
-              >Proyectos</a
-            >
-          </li>
-        </ul>
-
+    opacity: 0.8;
+  "
+>
+  <div class="container-fluid" style="padding-right: 2%">
+    <a class="navbar-brand" href="/portfolio"
+      ><img
+        src="./assets/Logo.png"
+        style="
+          width: 7.8125rem;
+          height: 4.0625rem;
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          background-position: top;
+          z-index: 100;
+        "
+    /></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarColor01"
+      aria-controls="navbarColor01"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="/portfolio"
+            >Home
+            <span class="visually-hidden">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio/#acercaDe">AcercaDe</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio/#educacion">Educacion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio/#experiencia">Experiencia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio/#habilidades">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio/#proyectos">Proyectos</a>
+        </li>
+      </ul>
+      <form class="d-flex">
         <a
           class="nav-link"
           href="https://github.com/BrunoMalta98"
@@ -110,7 +104,7 @@
           target="_blank"
           rel="noreferrer noopener"
           rel="noreferrer noopener"
-          style="width: 20px; margin-right: 2%"
+          style="width: 20px; margin-right: 3%"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
             width="25"
@@ -124,24 +118,26 @@
             />
           </svg>
         </a>
-
+        <div style="width: 20px"></div>
         <button
           type="button"
-          class="btn btn-secondary"
+          class="btn btn btn-light"
           (click)="login()"
           *ngIf="!isLogged"
+          style="max-height: 48px; max-width: 80px"
         >
           Ingresar
         </button>
         <button
           type="button"
-          class="btn btn-secondary"
+          class="btn btn btn-light"
           (click)="onLogOut()"
           *ngIf="isLogged"
+          style="height: 50px; width: 140px"
         >
           Cerrar Sesion
         </button>
-      </div>
+      </form>
     </div>
-  </nav>
-</div>
+  </div>
+</nav>

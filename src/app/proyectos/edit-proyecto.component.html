@@ -57,15 +57,21 @@
           <div class="form-group">
             <label for="imgP">Imagen</label>
             <input
-              type="text"
+              type="file"
               name="imgP"
               id="imgP"
               class="form-control"
-              [(ngModel)]="proyecto.imgP"
-              required
+              (change)="uploadImage($event)"
+              accept=".jpg, .jpeg, .png"
             />
           </div>
-
+          <div>
+            <img
+              [src]="imageService.url"
+              alt="Foto de Proyecto"
+              style="width: 100px; height: 100px; margin-top: 2%"
+            />
+          </div>
           <button
             type="submit"
             id="save"
