@@ -16,9 +16,16 @@ html, body {
 body{
     text-align: center;
     height: 100%;
+    min-height: 100vh;
 }
 
 h1[id]{
 
     scroll-margin-top:70px;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
